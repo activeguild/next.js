@@ -1,12 +1,16 @@
-import Link from 'next/link'
+import { Head } from "../components/head";
+import Link from "next/link";
 
 export default function IndexPage() {
   return (
     <div>
-      Hello World.{' '}
-      <Link href="/about">
-        <a>About</a>
-      </Link>
+      <Head title="Home" />
+      <div>
+        Hello World.{" "}
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
